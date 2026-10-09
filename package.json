@@ -1,0 +1,12 @@
+{
+  "name": "dark-wild-task-manager",
+  "version": "1.0.0",
+  "description": "Dark Wild To-Do Task Manager",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

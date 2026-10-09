@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dark Wild - Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <p class="tag">⚡ DARK WILD / PRODUCTIVITY</p>
+            <h1>📝 TO-DO <span>MANAGER</span></h1>
+            <p class="subtitle">Rule your day. Conquer your tasks.</p>
+        </div>
+
+        <div class="input-section">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your next mission..."
+            >
+
+            <button onclick="addTask()">+ ADD TASK</button>
+        </div>
+
+        <div class="filter-section">
+            <button onclick="showTasks('all')">ALL TASKS</button>
+            <button onclick="showTasks('pending')">PENDING</button>
+            <button onclick="showTasks('completed')">COMPLETED</button>
+        </div>
+
+        <div class="task-info">
+            <div>
+                <span>TOTAL</span>
+                <b id="totalTasks">0</b>
+            </div>
+
+            <div>
+                <span>PENDING</span>
+                <b id="pendingTasks">0</b>
+            </div>
+
+            <div>
+                <span>COMPLETED</span>
+                <b id="completedTasks">0</b>
+            </div>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p class="footer">DARK WILD // STAY FOCUSED. STAY UNSTOPPABLE.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
